@@ -29,5 +29,17 @@ namespace Business.Constants
         public static string ClotheDeleted = "Kıyafet silindi";
 
         public static string AuthorizationDenied = "Yetkiniz yok";
+
+        public static string UserDeleted = "Kullanıcı silindi";
+        public static string UserUpdated = "Kullanıcı güncellendi";
+        public static string UserRegistered = "Kayıt başarılı";
+        public static string UserNotFound = "Email bulunamadı";
+        public static string UserAlreadyExists = "Bu kullanıcı zaten mevcut";
+
+        public static string PasswordError = "Şifre hatalı";
+        public static string SuccessfulLogin = "Giriş başarılı";
+
+
+        public static string AccessTokenCreated = "JWT Created";
     }
 }

@@ -10,6 +10,7 @@ namespace Business.Abstract
     {
         IDataResult<List<Clothe>> GetAll();
         IDataResult<Clothe> GetById(int id);
+        IDataResult<List<Clothe>> GetByCategoryId(int id);
         IResult Add(Clothe color);
         IResult Update(Clothe color);
         IResult Delete(Clothe color);

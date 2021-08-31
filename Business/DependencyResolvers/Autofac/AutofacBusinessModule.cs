@@ -29,13 +29,13 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<ClotheManager>().As<IClotheService>().SingleInstance();
             builder.RegisterType<EfClotheDal>().As<IClotheDal>().SingleInstance();
 
-            //builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
-            //builder.RegisterType<EfUserDal>().As<IUserDal>().SingleInstance();
+            builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
+            builder.RegisterType<EfUserDal>().As<IUserDal>().SingleInstance();
 
             builder.RegisterType<ClotheImageManager>().As<IClotheImageService>().SingleInstance();
             builder.RegisterType<EfClotheImageDal>().As<IClotheImageDal>().SingleInstance();
 
-            //builder.RegisterType<AuthManager>().As<IAuthService>().SingleInstance();
+            builder.RegisterType<AuthManager>().As<IAuthService>().SingleInstance();
             builder.RegisterType<JwtHelper>().As<ITokenHelper>().SingleInstance();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
