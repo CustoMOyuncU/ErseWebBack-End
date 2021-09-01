@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinsessAspects.Autofac;
 using Business.Constants;
 using Core.Utilities.Helpers;
 using Core.Utilities.Results;
@@ -20,6 +21,7 @@ namespace Business.Concrete
             _clotheImageDal = clotheImageDal;
         }
 
+        [SecuredOperation("admin")]
         public IResult Add(IFormFile file, ClotheImage clotheImage)
         {
             clotheImage.ImagePath = FileHelper.Add(file);

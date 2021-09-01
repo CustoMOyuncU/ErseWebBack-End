@@ -16,8 +16,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csp
 		{61F27010-4B57-4185-B87D-363C2139DC91} = {61F27010-4B57-4185-B87D-363C2139DC91}
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlTables", "SqlTables", "{C604D1A9-F601-4F78-9789-59D2CCEBBA3C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
